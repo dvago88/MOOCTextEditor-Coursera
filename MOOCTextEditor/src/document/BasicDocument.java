@@ -18,19 +18,6 @@ public class BasicDocument extends Document {
     }
 
 
-    /** Aparentemente hecho ya!!!
-     * Get the number of words in the document.
-     * A "word" is defined as a contiguous string of alphabetic characters
-     * i.e. any upper or lower case characters a-z or A-Z.  This method completely
-     * ignores numbers when you count words, and assumes that the document does not have
-     * any strings that combine numbers and letters.
-     * <p>
-     * Check the examples in the main method below for more information.
-     * <p>
-     * This method should process the entire text string each time it is called.
-     *
-     * @return The number of words in the document.
-     */
     @Override
     public int getNumWords() {
         return getTokens("[A-Za-z']+").size();
@@ -50,9 +37,12 @@ public class BasicDocument extends Document {
      */
     @Override
     public int getNumSentences() {
-        //TODO: Implement this method.  See the Module 2 support videos
-        // if you need help.
-        return 0;
+        int numberOfSentences = getTokens(".?!").size();
+        int length = getText().length();
+        if(getText().charAt(length-1)!='.'&&getText().charAt(length-1)!='!'&&getText().charAt(length-1)!='?'&&getText().charAt(length-1)!=' '){
+            numberOfSentences++;
+        }
+        return numberOfSentences;
     }
 
     /**
