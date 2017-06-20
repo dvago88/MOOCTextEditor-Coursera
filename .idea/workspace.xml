@@ -2,125 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30977866-6cb6-4176-b34d-dd154d6de776" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/AutoSpellingTextArea$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/AutoSpellingTextArea$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/AutoSpellingTextArea.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/EditDistanceDialogController$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/EditDistanceDialogController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/LaunchClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/LoadFileDialogController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/MainApp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/MarkovController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/TextProController$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/TextProController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/document/BasicDocument.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/document/BasicDocumentGrader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/document/Document.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/document/DocumentBenchmarking.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/document/EfficientDocument.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/document/EfficientDocumentGrader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/AutoComplete.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/AutoCompleteDictionaryTrie.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/AutoCompleteDictionaryTrieTester.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/Dictionary.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/DictionaryBST.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/DictionaryBSTTester.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/DictionaryBenchmarking.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/DictionaryGrader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/DictionaryHashSet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/DictionaryLL.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/DictionaryLLTester.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/DictionaryLoader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/NearbyWords.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/NearbyWordsGraderOne.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/NearbyWordsGraderTwo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/SpellingSuggest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/TrieGrader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/TrieNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/WPTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/WPTreeGrader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/WPTreeNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/spelling/WordPath.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/textgen/LLNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/textgen/ListNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/textgen/MarkovTextGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/textgen/MarkovTextGeneratorGrader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/textgen/MarkovTextGeneratorLoL.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/textgen/MyLinkedList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/textgen/MyLinkedListGrader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/textgen/MyLinkedListTester.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/lib/richtextfx-fat-0.6.10.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/MOOCTextEditor.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/application.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/view/EditDistanceLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/view/LoadFileLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/view/MarkovLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/view/MarkovOptionsLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/view/RootLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/view/TextAppLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/data/dict.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/data/grader_dict.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/data/warAndPeace.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/data/words.small.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/AutoSpellingTextArea.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/EditDistanceDialogController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/LaunchClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/LoadFileDialogController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/MainApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/MarkovController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/TextProController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/application.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/view/EditDistanceLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/view/LoadFileLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/view/MarkovLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/view/MarkovOptionsLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/view/RootLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/view/TextAppLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/BasicDocument.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/BasicDocumentGrader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/Document.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/DocumentBenchmarking.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/EfficientDocument.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/EfficientDocumentGrader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/AutoComplete.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/AutoCompleteDictionaryTrie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/AutoCompleteDictionaryTrieTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/Dictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryBST.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryBSTTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryBenchmarking.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryGrader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryHashSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryLL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryLLTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/NearbyWords.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/NearbyWordsGraderOne.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/NearbyWordsGraderTwo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/SpellingSuggest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/TrieGrader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/TrieNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/WPTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/WPTreeGrader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/WordPath.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MarkovTextGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MarkovTextGeneratorGrader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MarkovTextGeneratorLoL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MyLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MyLinkedListGrader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MyLinkedListTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/test_cases/dict.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/test_cases/dict2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/test_cases/mod1TestCases.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MOOCTextEditor/test_cases/mod2TestCases.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/.classpath" afterPath="$PROJECT_DIR$/MOOCTextEditor/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/.project" afterPath="$PROJECT_DIR$/MOOCTextEditor/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/MOOCTextEditor/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/bin/application/application.css" afterPath="$PROJECT_DIR$/MOOCTextEditor/bin/application/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/data/dict.txt" afterPath="$PROJECT_DIR$/MOOCTextEditor/data/dict.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/data/warAndPeace.txt" afterPath="$PROJECT_DIR$/MOOCTextEditor/data/warAndPeace.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/data/words.small.txt" afterPath="$PROJECT_DIR$/MOOCTextEditor/data/words.small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/application/AutoSpellingTextArea.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/AutoSpellingTextArea.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/application/EditDistanceDialogController.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/EditDistanceDialogController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/application/LaunchClass.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/LaunchClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/application/LoadFileDialogController.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/LoadFileDialogController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/application/MainApp.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/MainApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/application/MarkovController.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/MarkovController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/application/TextProController.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/TextProController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/application/application.css" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/application/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/document/BasicDocument.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/BasicDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/document/Document.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/Document.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/document/DocumentBenchmarking.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/DocumentBenchmarking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/document/EfficientDocument.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/document/EfficientDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/AutoComplete.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/AutoComplete.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/AutoCompleteDictionaryTrie.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/AutoCompleteDictionaryTrie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/AutoCompleteDictionaryTrieTester.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/AutoCompleteDictionaryTrieTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/Dictionary.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/Dictionary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryBSTTester.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryBSTTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryBenchmarking.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryBenchmarking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryHashSet.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryHashSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryLL.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryLL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryLLTester.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryLLTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryLoader.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/DictionaryLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/NearbyWords.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/NearbyWords.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/SpellingSuggest.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/SpellingSuggest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/TrieNode.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/TrieNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/WPTree.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/WPTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/WordPath.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/spelling/WordPath.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MarkovTextGenerator.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MarkovTextGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MarkovTextGeneratorLoL.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MarkovTextGeneratorLoL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MyLinkedList.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MyLinkedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MyLinkedListTester.java" afterPath="$PROJECT_DIR$/MOOCTextEditor/src/textgen/MyLinkedListTester.java" />
     </list>
     <ignored path="$PROJECT_DIR$/MOOCTextEditor/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -152,7 +73,7 @@
       <file leaf-file-name="Document.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MOOCTextEditor/src/document/Document.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
+            <state relative-caret-position="500">
               <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="e#504#505#0" expanded="true" />
@@ -165,8 +86,53 @@
       <file leaf-file-name="BasicDocument.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MOOCTextEditor/src/document/BasicDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="-300">
+              <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding>
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dict.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOCTextEditor/test_cases/dict.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod2TestCases.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOCTextEditor/test_cases/mod2TestCases.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="274" lean-forward="true" selection-start-line="4" selection-start-column="274" selection-end-line="4" selection-end-column="274" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dict2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOCTextEditor/test_cases/dict2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod1TestCases.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOCTextEditor/test_cases/mod1TestCases.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -196,6 +162,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/MOOCTextEditor/src/document/Document.java" />
+        <option value="$PROJECT_DIR$/MOOCTextEditor/src/document/BasicDocument.java" />
       </list>
     </option>
   </component>
@@ -236,6 +203,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MOOCTextEditor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOCTextEditor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_cases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -813,15 +794,24 @@
       <option name="presentableId" value="Default" />
       <updated>1497858865563</updated>
       <workItem from="1497858871869" duration="1964000" />
-      <workItem from="1497926273607" duration="1591000" />
+      <workItem from="1497926273607" duration="2780000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit inicial">
+      <created>1497936242894</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497936242894</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3555000" />
+    <option name="totallyTimeSpent" value="4744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="-9" width="1857" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -860,6 +850,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit inicial" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -889,7 +883,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -916,6 +915,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -923,6 +923,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -930,6 +931,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -951,6 +953,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -962,9 +965,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MOOCTextEditor/test_cases/dict2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOCTextEditor/test_cases/mod1TestCases.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOCTextEditor/test_cases/dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOCTextEditor/test_cases/mod2TestCases.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="274" lean-forward="true" selection-start-line="4" selection-start-column="274" selection-end-line="4" selection-end-column="274" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MOOCTextEditor/src/document/Document.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
+        <state relative-caret-position="500">
           <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding>
             <element signature="e#504#505#0" expanded="true" />
@@ -975,9 +1010,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MOOCTextEditor/src/document/BasicDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-300">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
