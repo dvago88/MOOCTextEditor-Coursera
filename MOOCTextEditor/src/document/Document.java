@@ -71,19 +71,24 @@ public abstract class Document {
         int contador = 0;
         char aux = ' ';
         for (int i = 0; i < word.length(); i++) {
-            if ((word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'i' || word.charAt(i) == 'o'
-                    || word.charAt(i) == 'u') && (aux != 'a' && aux != 'e' && aux != 'i' && aux != 'o' && aux != 'u')) {
+            char letra = Character.toLowerCase(word.charAt(i));
+            if ((letra == 'a' || letra == 'e' || letra == 'i' ||
+                    letra == 'o' || letra == 'u' || letra == 'y') &&
+                    (aux != 'a' && aux != 'e' && aux != 'i' && aux != 'o' && aux != 'u' && aux != 'y')) {
                 contador++;
             }
-            aux = word.charAt(i);
+            aux = letra;
         }
-        if (word.charAt(word.length() - 1) == 'e' && word.length() > 1 &&
-                (aux != 'a' && aux != 'e' && aux != 'i' && aux != 'o' && aux != 'u')) {
-            contador--;
+        if (word.length() > 1) {
+            char penultima = word.charAt(word.length() - 2);
+            if (aux == 'e' && word.length() > 1 &&
+                    penultima != 'a' && penultima != 'e' && penultima != 'i' &&
+                            penultima != 'o' && penultima != 'u' && penultima != 'y' &&
+                    (contador > 1)) {
+                contador--;
+            }
         }
-        // TODO: Implement this method so that you can call it from the
-        // getNumSyllables method in BasicDocument (module 2) and
-        // EfficientDocument (module 3).
+
         return contador;
     }
 

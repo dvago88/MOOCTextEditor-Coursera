@@ -26,39 +26,25 @@ public class BasicDocument extends Document {
 
     @Override
     public int getNumSentences() {
-        int numberOfSentences = getTokens(".?!").size();
+        int numberOfSentences = getTokens("[.?!]+").size();
         int length = getText().length();
-        if(getText().charAt(length-1)!='.'&&getText().charAt(length-1)!='!'&&getText().charAt(length-1)!='?'&&getText().charAt(length-1)!=' '){
+        if (length == 0) {
+            return 0;
+        }
+        if (getText().charAt(length - 1) != '.' && getText().charAt(length - 1) != '!' &&
+                getText().charAt(length - 1) != '?' && getText().charAt(length - 1) != ' ') {
             numberOfSentences++;
         }
+
         return numberOfSentences;
     }
 
-    /**
-     * Get the total number of syllables in the document (the stored text).
-     * To count the number of syllables in a word, it uses the following rules:
-     * Each contiguous sequence of one or more vowels is a syllable,
-     * with the following exception: a lone "e" at the end of a word
-     * is not considered a syllable unless the word has no other syllables.
-     * You should consider y a vowel.
-     * <p>
-     * Check the examples in the main method below for more information.
-     * <p>
-     * This method should process the entire text string each time it is called.
-     *
-     * @return The number of syllables in the document.
-     */
     @Override
     public int getNumSyllables() {
-        int contador=0;
-        for(String palabras:getTokens("[A-Za-z']+")){
-            contador+=countSyllables(palabras);
+        int contador = 0;
+        for (String palabras : getTokens("[A-Za-z']+")) {
+            contador += countSyllables(palabras);
         }
-        //TODO: Implement this method in week 2.  See the Module 2 support videos
-        // if you need help.  And note that there is no need to use a regular
-        // expression for the syllable counting.  We recommend you implement
-        // the helper function countSyllables in Document.java using a loop,
-        // and then call it here on each word.
         return contador;
     }
 
@@ -67,7 +53,7 @@ public class BasicDocument extends Document {
      * You are encouraged to add your own tests.  */
     public static void main(String[] args) {
         /* Each of the test cases below uses the method testCase.  The first
-		 * argument to testCase is a Document object, created with the string shown.
+         * argument to testCase is a Document object, created with the string shown.
 		 * The next three arguments are the number of syllables, words and sentences 
 		 * in the string, respectively.  You can use these examples to help clarify 
 		 * your understanding of how to count syllables, words, and sentences.
