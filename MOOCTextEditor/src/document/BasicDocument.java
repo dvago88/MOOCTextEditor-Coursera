@@ -1,5 +1,6 @@
 package document;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,18 +24,6 @@ public class BasicDocument extends Document {
         return getTokens("[A-Za-z']+").size();
     }
 
-    /**
-     * Get the number of sentences in the document.
-     * Sentences are defined as contiguous strings of characters ending in an
-     * end of sentence punctuation (. ! or ?) or the last contiguous set of
-     * characters in the document, even if they don't end with a punctuation mark.
-     * <p>
-     * Check the examples in the main method below for more information.
-     * <p>
-     * This method should process the entire text string each time it is called.
-     *
-     * @return The number of sentences in the document.
-     */
     @Override
     public int getNumSentences() {
         int numberOfSentences = getTokens(".?!").size();
@@ -61,12 +50,16 @@ public class BasicDocument extends Document {
      */
     @Override
     public int getNumSyllables() {
+        int contador=0;
+        for(String palabras:getTokens("[A-Za-z']+")){
+            contador+=countSyllables(palabras);
+        }
         //TODO: Implement this method in week 2.  See the Module 2 support videos
         // if you need help.  And note that there is no need to use a regular
         // expression for the syllable counting.  We recommend you implement
         // the helper function countSyllables in Document.java using a loop,
         // and then call it here on each word.
-        return 0;
+        return contador;
     }
 
 
