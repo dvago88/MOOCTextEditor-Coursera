@@ -35,7 +35,7 @@ public abstract class Document {
      * pattern
      */
     protected List<String> getTokens(String pattern) {
-        ArrayList<String> tokens = new ArrayList<String>();
+        ArrayList<String> tokens = new ArrayList<>();
         Pattern tokSplitter = Pattern.compile(pattern);
         Matcher m = tokSplitter.matcher(text);
 
@@ -46,27 +46,6 @@ public abstract class Document {
         return tokens;
     }
 
-    /**
-     * This is a helper function that returns the number of syllables
-     * in a word.  You should write this and use it in your
-     * BasicDocument class.
-     * <p>
-     * You will probably NOT need to add a countWords or a countSentences
-     * method here.  The reason we put countSyllables here because we'll
-     * use it again next week when we implement the EfficientDocument class.
-     * <p>
-     * For reasons of efficiency you should not create Matcher or Pattern
-     * objects inside this method. Just use a loop to loop through the
-     * characters in the string and write your own logic for counting
-     * syllables.
-     *
-     * @param word The word to count the syllables in
-     * @return The number of syllables in the given word, according to
-     * this rule: Each contiguous sequence of one or more vowels is a syllable,
-     * with the following exception: a lone "e" at the end of a word
-     * is not considered a syllable unless the word has no other syllables.
-     * You should consider y a vowel.
-     */
     protected int countSyllables(String word) {
         int contador = 0;
         char aux = ' ';
@@ -159,10 +138,9 @@ public abstract class Document {
      * return the Flesch readability score of this document
      */
     public double getFleschScore() {
-        // TODO: You will play with this method in week 1, and
-        // then implement it in week 2
 
-        return text.length();
+
+        return 206.835-1.015*getNumWords()/getNumSentences()-84.6*getNumSyllables()/getNumWords();
     }
 
 
