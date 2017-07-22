@@ -36,18 +36,8 @@ public class EfficientDocument extends Document {
         return !(tok.indexOf("!") >= 0 || tok.indexOf(".") >= 0 || tok.indexOf("?") >= 0);
     }
 
-
-    /**
-     * Passes through the text one time to count the number of words, syllables
-     * and sentences, and set the member variables appropriately.
-     * Words, sentences and syllables are defined as described below.
-     */
     private void processText() {
-        // Call getTokens on the text to preserve separate strings that are
-        // either words or sentence-ending punctuation.  Ignore everything
-        // That is not a word or a sentence-ending puctuation.
-        // MAKE SURE YOU UNDERSTAND THIS LINE BEFORE YOU CODE THE REST
-        // OF THIS METHOD.
+
         List<String> tokens = getTokens("[!?.]+|[a-zA-Z]+");
         int countWords = 0;
         int countSyl = 0;
@@ -60,69 +50,26 @@ public class EfficientDocument extends Document {
                 countSen++;
             }
         }
+        if (tokens.size() > 0) {
+            if (isWord(tokens.get(tokens.size() - 1))) {
+                countSen++;
+            }
+        }
         numWords = countWords;
         numSyllables = countSyl;
         numSentences = countSen;
-
-        // TODO: Finish this method.  Remember the countSyllables method from
-        // Document.  That will come in handy here.  isWord defined above will also help.
     }
 
-
-    /**
-     * Get the number of sentences in the document.
-     * Sentences are defined as contiguous strings of characters ending in an
-     * end of sentence punctuation (. ! or ?) or the last contiguous set of
-     * characters in the document, even if they don't end with a punctuation mark.
-     * <p>
-     * Check the examples in the main method below for more information.
-     * <p>
-     * This method does NOT process the whole text each time it is called.
-     * It returns information already stored in the EfficientDocument object.
-     *
-     * @return The number of sentences in the document.
-     */
     @Override
     public int getNumSentences() {
         return numSentences;
     }
 
-
-    /**
-     * Get the number of words in the document.
-     * A "word" is defined as a contiguous string of alphabetic characters
-     * i.e. any upper or lower case characters a-z or A-Z.  This method completely
-     * ignores numbers when you count words, and assumes that the document does not have
-     * any strings that combine numbers and letters.
-     * <p>
-     * Check the examples in the main method below for more information.
-     * <p>
-     * This method does NOT process the whole text each time it is called.
-     * It returns information already stored in the EfficientDocument object.
-     *
-     * @return The number of words in the document.
-     */
     @Override
     public int getNumWords() {
         return numWords;
     }
 
-
-    /**
-     * Get the total number of syllables in the document (the stored text).
-     * To calculate the the number of syllables in a word, it uses the following rules:
-     * Each contiguous sequence of one or more vowels is a syllable,
-     * with the following exception: a lone "e" at the end of a word
-     * is not considered a syllable unless the word has no other syllables.
-     * You should consider y a vowel.
-     * <p>
-     * Check the examples in the main method below for more information.
-     * <p>
-     * This method does NOT process the whole text each time it is called.
-     * It returns information already stored in the EfficientDocument object.
-     *
-     * @return The number of syllables in the document.
-     */
     @Override
     public int getNumSyllables() {
         return numSyllables;
