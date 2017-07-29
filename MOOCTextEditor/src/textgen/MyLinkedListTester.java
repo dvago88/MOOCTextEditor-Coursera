@@ -29,11 +29,11 @@ public class MyLinkedListTester {
     @Before
     public void setUp() throws Exception {
         // Feel free to use these lists, or add your own
-        shortList = new MyLinkedList<String>();
+        shortList = new MyLinkedList<>();
         shortList.add("A");
         shortList.add("B");
-        emptyList = new MyLinkedList<Integer>();
-        longerList = new MyLinkedList<Integer>();
+        emptyList = new MyLinkedList<>();
+        longerList = new MyLinkedList<>();
         for (int i = 0; i < LONG_LIST_LENGTH; i++) {
             longerList.add(i);
         }
@@ -128,7 +128,8 @@ public class MyLinkedListTester {
      */
     @Test
     public void testSize() {
-        // TODO: implement this test
+        assertEquals("Correct size",3,list1.size());
+        assertEquals("Should be zero",0,emptyList.size());
     }
 
 
@@ -140,7 +141,18 @@ public class MyLinkedListTester {
     @Test
     public void testAddAtIndex() {
         // TODO: implement this test
+        shortList.add("C");
+        shortList.add("D");
+        shortList.add("F");
+        shortList.add("G");
+        shortList.add("H");
+        shortList.add(4,"E");
 
+        assertEquals("Debe ser E","E",shortList.get(4));
+        assertEquals("Debe ser F","F",shortList.get(5));
+        assertEquals("Debe ser G","G",shortList.get(6));
+        assertEquals("Debe ser H","H",shortList.get(7));
+        assertEquals("Debe ser D","D",shortList.get(3));
     }
 
     /**
