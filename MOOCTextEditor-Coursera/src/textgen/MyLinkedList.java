@@ -14,7 +14,6 @@ public class MyLinkedList<E> extends AbstractList<E> {
     LLNode<E> tail;
     int size;
 
-
     /**
      * Create a new empty LinkedList
      */
@@ -101,8 +100,13 @@ public class MyLinkedList<E> extends AbstractList<E> {
      * @throws IndexOutOfBoundsException If index is outside the bounds of the list
      */
     public E remove(int index) {
-        // TODO: Implement this method
-        return null;
+        LLNode<E> toRemoveNode = getNode(index);
+
+        toRemoveNode.prev.next = toRemoveNode.next;
+        toRemoveNode.next.prev = toRemoveNode.prev;
+        size--;
+
+        return toRemoveNode.data;
     }
 
     /**
@@ -114,8 +118,12 @@ public class MyLinkedList<E> extends AbstractList<E> {
      * @throws IndexOutOfBoundsException if the index is out of bounds.
      */
     public E set(int index, E element) {
-        // TODO: Implement this method
-        return null;
+        LLNode<E> updatedNode = getNode(index);
+
+        E dataToReturn = updatedNode.data;
+        updatedNode.data = element;
+
+        return dataToReturn;
     }
 }
 
@@ -124,7 +132,6 @@ class LLNode<E> {
     LLNode<E> next;
     E data;
 
-    // TODO: Add any other methods you think are useful here
     // E.g. you might want to add another constructor
 
     public LLNode(E e) {

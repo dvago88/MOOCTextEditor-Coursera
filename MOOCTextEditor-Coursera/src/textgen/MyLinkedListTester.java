@@ -23,6 +23,9 @@ public class MyLinkedListTester {
     MyLinkedList<Integer> longerList;
     MyLinkedList<Integer> list1;
 
+    MyLinkedList<Integer> removedor;
+    MyLinkedList<Integer> removedorVacio;
+
     /**
      * @throws java.lang.Exception
      */
@@ -34,14 +37,18 @@ public class MyLinkedListTester {
         shortList.add("B");
         emptyList = new MyLinkedList<>();
         longerList = new MyLinkedList<>();
+        removedor = new MyLinkedList<>();
+        removedorVacio = new MyLinkedList<>();
         for (int i = 0; i < LONG_LIST_LENGTH; i++) {
             longerList.add(i);
         }
-        list1 = new MyLinkedList<Integer>();
+        list1 = new MyLinkedList<>();
         list1.add(65);
         list1.add(21);
         list1.add(42);
 
+        removedor.add(0);
+        removedor.add(1);
     }
 
 
@@ -49,7 +56,7 @@ public class MyLinkedListTester {
      * Test if the get method is working correctly.
      */
     /*You should not need to add much to this method.
-	 * We provide it as an example of a thorough test. */
+     * We provide it as an example of a thorough test. */
     @Test
     public void testGet() {
         //test empty list, get should throw an exception
@@ -109,7 +116,21 @@ public class MyLinkedListTester {
         assertEquals("Remove: check element 0 is correct ", (Integer) 21, list1.get(0));
         assertEquals("Remove: check size is correct ", 2, list1.size());
 
-        // TODO: Add more tests here
+        try {
+            removedorVacio.remove(0);
+            fail("No se lanzo indexoutofboudsexecption");
+        } catch (IndexOutOfBoundsException ie) {
+
+        }
+
+        removedor.remove(0);
+        removedor.remove(0);
+        try {
+            removedor.remove(0);
+            fail("No se lanzo exception cuando se trato de remover en 0");
+        } catch (IndexOutOfBoundsException ie) {
+
+        }
     }
 
     /**
@@ -118,8 +139,8 @@ public class MyLinkedListTester {
      */
     @Test
     public void testAddEnd() {
-        // TODO: implement this test
-
+        shortList.add("C");
+        assertEquals("revisa si ingreso elemento al final","C",shortList.get(shortList.size()-1));
     }
 
 
@@ -128,8 +149,8 @@ public class MyLinkedListTester {
      */
     @Test
     public void testSize() {
-        assertEquals("Correct size",3,list1.size());
-        assertEquals("Should be zero",0,emptyList.size());
+        assertEquals("Correct size", 3, list1.size());
+        assertEquals("Should be zero", 0, emptyList.size());
     }
 
 
@@ -140,19 +161,18 @@ public class MyLinkedListTester {
      */
     @Test
     public void testAddAtIndex() {
-        // TODO: implement this test
         shortList.add("C");
         shortList.add("D");
         shortList.add("F");
         shortList.add("G");
         shortList.add("H");
-        shortList.add(4,"E");
+        shortList.add(4, "E");
 
-        assertEquals("Debe ser E","E",shortList.get(4));
-        assertEquals("Debe ser F","F",shortList.get(5));
-        assertEquals("Debe ser G","G",shortList.get(6));
-        assertEquals("Debe ser H","H",shortList.get(7));
-        assertEquals("Debe ser D","D",shortList.get(3));
+        assertEquals("Debe ser E", "E", shortList.get(4));
+        assertEquals("Debe ser F", "F", shortList.get(5));
+        assertEquals("Debe ser G", "G", shortList.get(6));
+        assertEquals("Debe ser H", "H", shortList.get(7));
+        assertEquals("Debe ser D", "D", shortList.get(3));
     }
 
     /**
@@ -160,11 +180,14 @@ public class MyLinkedListTester {
      */
     @Test
     public void testSet() {
-        // TODO: implement this test
+        assertEquals("prueba si devuelve lo correcto", "B", shortList.set(1, "C"));
+        assertEquals("comprueba que si meta lo correcto", "C", shortList.get(1));
 
+        try {
+            shortList.set(3, "c");
+            fail("No se esta revisando el IndexOutOfBoundsException");
+        } catch (IndexOutOfBoundsException ie) {
+
+        }
     }
-
-
-    // TODO: Optionally add more test methods.
-
 }
