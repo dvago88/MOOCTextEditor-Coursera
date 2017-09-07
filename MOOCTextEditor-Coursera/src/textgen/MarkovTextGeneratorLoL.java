@@ -58,15 +58,13 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
      */
     @Override
     public String generateText(int numWords) {
-        // TODO: Implement this method
-        //solo falta arreglar que el numero random no siempre sea el mismo
         String output = "";
         ListNode listNode = wordList.get(0);
         starter = listNode.getWord();
         output += starter;
         for (int i = 1; i < numWords; i++) {
             String word = listNode.getRandomNextWord(rnGenerator);
-            output += " "+word;
+            output += " " + word;
             int index = -1;
 
             int count = 0;
@@ -224,9 +222,6 @@ class ListNode {
         return nextWords.get(generator.nextInt(nextWords.size()));
     }
 
-    public List<String> getNextWords() {
-        return nextWords;
-    }
 
     public String toString() {
         String toReturn = word + ": ";

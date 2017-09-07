@@ -36,6 +36,12 @@ public class EfficientDocument extends Document {
         return !(tok.indexOf("!") >= 0 || tok.indexOf(".") >= 0 || tok.indexOf("?") >= 0);
     }
 
+    /**
+     * Passes through the text one time to count the number of words, syllables
+     * and sentences, and set the member variables appropriately.
+     * Words, sentences and syllables are defined as described below.
+     */
+
     private void processText() {
 
         List<String> tokens = getTokens("[!?.]+|[a-zA-Z]+");

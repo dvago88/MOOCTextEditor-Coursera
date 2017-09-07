@@ -75,13 +75,17 @@ public class MyLinkedList<E> extends AbstractList<E> {
      */
     public void add(int index, E element) {
         LLNode<E> newNode = new LLNode<>(element);
-        LLNode<E> oldNode = getNode(index);
+        if (size != 0) {
+            LLNode<E> oldNode = getNode(index);
 
-        newNode.prev = oldNode.prev;
-        newNode.next = oldNode;
-        oldNode.prev.next = newNode;
-        oldNode.prev = newNode;
-        size++;
+            newNode.prev = oldNode.prev;
+            newNode.next = oldNode;
+            oldNode.prev.next = newNode;
+            oldNode.prev = newNode;
+            size++;
+        } else {
+            add(element);
+        }
     }
 
 

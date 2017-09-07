@@ -21,8 +21,7 @@ public class DocumentBenchmarking {
 
         // The text to test on
 //        String textfile = "data/warAndPeace.txt";
-        String textfile = "C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor\\data\\warAndPeace.txt";
-
+        String textfile="C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\data\\warAndPeace.txt";
         // The amount of characters to increment each step
         // You can play around with this
         int increment = 20000;
@@ -33,12 +32,14 @@ public class DocumentBenchmarking {
 
         // THe number of characters to start with.
         // You can play around with this.
-        int start = 50000;
+        int start = 10000;
+
+        System.out.println("num Steps   Basic Document    Efficient Document");
 
         for (int numToCheck = start; numToCheck < numSteps * increment + start;
              numToCheck += increment) {
 
-            System.out.print(numToCheck + "\t");
+            System.out.print(numToCheck + "\t\t\t\t");
 
             String file = getStringFromFile(textfile, numToCheck);
 
@@ -49,7 +50,7 @@ public class DocumentBenchmarking {
             }
             Long time2 = System.nanoTime();
             Long realTime = (time2 - time1) / 1000000;
-            System.out.print(realTime + "\t");
+            System.out.print(realTime + "\t\t\t\t");
 
             time1 = System.nanoTime();
             for (int i = 0; i < trials; i++) {

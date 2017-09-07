@@ -11,9 +11,9 @@ public class BasicDocumentGrader {
         try
         {
             System.out.println("Sentences, words, and syllables:");
-            BufferedReader br = new BufferedReader(new FileReader("test_cases/mod1TestCases.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\test_cases\\mod1TestCases.txt"));
             String line;
-            PrintWriter out = new PrintWriter("grader_output/module1.part1.out", "utf-8");
+            PrintWriter out = new PrintWriter("C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\grader_output/module1.part1.out", "utf-8");
             while ((line = br.readLine()) != null)
             {
                 BasicDocument doc = new BasicDocument(line);
@@ -26,8 +26,8 @@ public class BasicDocumentGrader {
             System.out.println("\nFlesch scores:");
             br.close();
 
-            br = new BufferedReader(new FileReader("test_cases/mod1TestCases.txt"));
-            out = new PrintWriter("grader_output/module1.part2.out", "utf-8");
+            br = new BufferedReader(new FileReader("C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\test_cases\\mod1TestCases.txt"));
+            out = new PrintWriter("C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\grader_output/module1.part2.out", "utf-8");
             while ((line = br.readLine()) != null)
             {
                 BasicDocument doc = new BasicDocument(line);
