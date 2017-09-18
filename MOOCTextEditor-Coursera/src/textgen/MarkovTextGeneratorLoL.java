@@ -59,6 +59,9 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
     @Override
     public String generateText(int numWords) {
         String output = "";
+        if (wordList.size() == 0 || numWords <= 0) {
+            return "";
+        }
         ListNode listNode = wordList.get(0);
         starter = listNode.getWord();
         output += starter;
@@ -150,12 +153,13 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
         MarkovTextGeneratorLoL gen = new MarkovTextGeneratorLoL(new Random(42));
         MarkovTextGeneratorLoL gen2 = new MarkovTextGeneratorLoL(new Random(4244));
         MarkovTextGeneratorLoL gen3 = new MarkovTextGeneratorLoL(new Random(14));
+        gen.generateText(20);
         String textString = "Hello.  Hello there.  This is a test.  Hello there.  Hello Bob.  Test again.";
         String prueba = "hello perro vaca hello vaca hello perrro hello perro hello perro";
         System.out.println(textString);
         gen.train(textString);
         System.out.println(gen);
-        System.out.println(gen.generateText(20));
+        System.out.println(gen.generateText(0));
         String textString2 = "You say yes, I say no, " +
                 "You say stop, and I say go, go, go, " +
                 "Oh no. You say goodbye and I say hello, hello, hello, " +
@@ -185,9 +189,9 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
         gen3.train(textString2);
         gen.retrain(textString2);
         System.out.println(gen);
-        System.out.println(gen.generateText(20));
-        System.out.println(gen2.generateText(20));
-        System.out.println(gen3.generateText(20));
+        System.out.println(gen.generateText(0));
+        System.out.println(gen2.generateText(0));
+        System.out.println(gen3.generateText(0));
     }
 
 }

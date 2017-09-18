@@ -131,6 +131,13 @@ public class MyLinkedListTester {
         } catch (IndexOutOfBoundsException ie) {
 
         }
+
+        try{
+            list1.remove(-1);
+            fail("You didn't catch iobe at remove");
+        }catch (IndexOutOfBoundsException iobe){
+
+        }
     }
 
     /**
@@ -141,6 +148,12 @@ public class MyLinkedListTester {
     public void testAddEnd() {
         shortList.add("C");
         assertEquals("revisa si ingreso elemento al final","C",shortList.get(shortList.size()-1));
+        try{
+            shortList.add(null);
+            fail("You didn't catch nullpoiner ar addEnd");
+        }catch (NullPointerException npe){
+
+        }
     }
 
 
@@ -173,6 +186,30 @@ public class MyLinkedListTester {
         assertEquals("Debe ser G", "G", shortList.get(6));
         assertEquals("Debe ser H", "H", shortList.get(7));
         assertEquals("Debe ser D", "D", shortList.get(3));
+        try{
+            shortList.add(4,null);
+            fail("You didn't catche it");
+        }catch (NullPointerException npe){
+
+        }
+        try{
+            shortList.add(-1,"Z");
+            fail("You didn't catch the exception");
+        }catch (IndexOutOfBoundsException ie){
+
+        }
+        try{
+            shortList.add(shortList.size()+1,"Z");
+            fail("didn't catch upper bound");
+        }catch (IndexOutOfBoundsException ie){
+
+        }
+        try{
+            shortList.add(4,null);
+            fail("Didn't catch nullpointer");
+        }catch (NullPointerException npe){
+
+        }
     }
 
     /**
@@ -187,6 +224,17 @@ public class MyLinkedListTester {
             shortList.set(3, "c");
             fail("No se esta revisando el IndexOutOfBoundsException");
         } catch (IndexOutOfBoundsException ie) {
+        }
+        try{
+            shortList.set(-1,"c");
+            fail("You didn't catch it");
+        }catch (IndexOutOfBoundsException ie){
+
+        }
+        try{
+            shortList.set(1,null);
+            fail("Didn't catch nullpointer");
+        }catch (NullPointerException npe){
 
         }
     }

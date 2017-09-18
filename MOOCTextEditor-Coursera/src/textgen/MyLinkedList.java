@@ -74,6 +74,7 @@ public class MyLinkedList<E> extends AbstractList<E> {
      * @param element The element to add
      */
     public void add(int index, E element) {
+        if (element == null) throw new NullPointerException("You can't add nulls...");
         LLNode<E> newNode = new LLNode<>(element);
         if (size != 0) {
             LLNode<E> oldNode = getNode(index);
@@ -122,6 +123,8 @@ public class MyLinkedList<E> extends AbstractList<E> {
      * @throws IndexOutOfBoundsException if the index is out of bounds.
      */
     public E set(int index, E element) {
+        if (element == null) throw new NullPointerException("You can't add nulls...");
+
         LLNode<E> updatedNode = getNode(index);
 
         E dataToReturn = updatedNode.data;
