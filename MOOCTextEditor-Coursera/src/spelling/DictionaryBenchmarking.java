@@ -32,9 +32,8 @@ public class DictionaryBenchmarking {
         int start = 50000;
 
         String notInDictionary = "notaword";
-        System.out.println("num\t LList\t BST");
+        System.out.println("num \t LList \t BST");
 
-        // TODO: Play around with the numbers above and graph the output to see trends in the data
         for (int numToCheck = start; numToCheck < numSteps * increment + start;
              numToCheck += increment) {
             // Time the creation of finding a word that is not in the dictionary.
@@ -49,14 +48,14 @@ public class DictionaryBenchmarking {
                 llDict.isWord(notInDictionary);
             }
             long endTime = System.nanoTime();
-            long timeLL = (endTime - startTime)/10000;
+            long timeLL = (endTime - startTime)/100;
 
             startTime = System.nanoTime();
             for (int i = 0; i < trials; i++) {
                 bstDict.isWord(notInDictionary);
             }
             endTime = System.nanoTime();
-            long timeBST = (endTime - startTime)/10000;
+            long timeBST = (endTime - startTime)/100;
 
             System.out.println(numToCheck + "\t" + timeLL + "\t" + timeBST);
 
