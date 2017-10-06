@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class LaunchClass {
 	
-	public String dictFile = "data/dict.txt";
+	public String dictFile = "C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\data\\dict.txt";
 	
 	public LaunchClass() {
 		super();

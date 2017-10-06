@@ -12,7 +12,7 @@ public class NearbyWordsGraderOne {
         PrintWriter out;
 
         try {
-            out = new PrintWriter("grader_output/module5.part1.out");
+            out = new PrintWriter("C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\grader_output\\module5.part1.out");
         } catch (Exception e) {
             e.printStackTrace();
             return;
@@ -20,7 +20,7 @@ public class NearbyWordsGraderOne {
 
         try {
             Dictionary d = new DictionaryHashSet();
-            DictionaryLoader.loadDictionary(d, "test_cases/dict.txt");
+            DictionaryLoader.loadDictionary(d, "C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\test_cases\\dict.txt");
             NearbyWords nw = new NearbyWords(d);
 
             List<String> d1 = nw.distanceOne("word", true);
