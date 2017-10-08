@@ -129,8 +129,7 @@ public class NearbyWords implements SpellingSuggest {
 
         // initial variables
         LinkedList<String> queue = new LinkedList<String>();     // String to explore
-        HashSet<String> visited = new HashSet<String>();   // to avoid exploring the same
-        // string multiple times
+        HashSet<String> visited = new HashSet<String>();   // to avoid exploring the same string multiple times
         List<String> retList = new LinkedList<String>();   // words to return
         int contador = 0;
 
@@ -164,19 +163,19 @@ public class NearbyWords implements SpellingSuggest {
 
     public static void main(String[] args) {
 //        basic testing code to get started
-       String word = "i";
-	   // Pass NearbyWords any Dictionary implementation you prefer
-	   Dictionary d = new DictionaryHashSet();
-	   DictionaryLoader.loadDictionary(d, "C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\data\\dict.txt");
-	   NearbyWords w = new NearbyWords(d);
-	   List<String> l = w.distanceOne(word, true);
-	   System.out.println("One away word Strings for for \""+word+"\" are:");
-	   System.out.println(l+"\n");
+        String word = "i";
+        // Pass NearbyWords any Dictionary implementation you prefer
+        Dictionary d = new DictionaryHashSet();
+        DictionaryLoader.loadDictionary(d, "C:\\Users\\org\\Desktop\\_12cb4b1bb69bf9afee58424b3543c948_Course2StarterCode\\MOOCTextEditor-Coursera\\data\\dict.txt");
+        NearbyWords w = new NearbyWords(d);
+        List<String> l = w.distanceOne(word, true);
+        System.out.println("One away word Strings for for \"" + word + "\" are:");
+        System.out.println(l + "\n");
 
-	   word = "tailo";
-	   List<String> suggest = w.suggestions(word, 10);
-	   System.out.println("Spelling Suggestions for \""+word+"\" are:");
-	   System.out.println(suggest);
+        word = "tailo";
+        List<String> suggest = w.suggestions(word, 10);
+        System.out.println("Spelling Suggestions for \"" + word + "\" are:");
+        System.out.println(suggest);
     }
 
 }
